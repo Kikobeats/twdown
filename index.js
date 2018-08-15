@@ -10,10 +10,9 @@ module.exports = async ({ url, browserless }) => {
     abortTypes: ['image', 'media', 'stylesheet', 'font']
   })
 
-  await page.click('form input')
-  await page.keyboard.type(url)
+  await page.type('form input', url)
   await page.click('form button')
-  await page.waitForSelector('table')
+  await page.waitForNavigation()
 
   const payload = await page.evaluate(() => {
     const getRow = n => `tbody > tr:nth-child(${n})`

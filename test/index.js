@@ -14,3 +14,12 @@ test('success', async t => {
     })
   )
 })
+
+// test('error', async t => {
+//   t.snapshot(
+//     await twdown({
+//       url: 'https://github.com',
+//       browserless
+//     })
+//   )
+// })
