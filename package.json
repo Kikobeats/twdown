@@ -23,7 +23,9 @@
     "url",
     "video"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "debug": "~3.1.0"
+  },
   "devDependencies": {
     "ava": "latest",
     "browserless": "latest",

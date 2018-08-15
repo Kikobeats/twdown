@@ -1,5 +1,6 @@
 'use strict'
 
+const debug = require('debug')('twdown')
 const { URL } = require('url')
 
 module.exports = async ({ url, browserless }) => {
@@ -10,9 +11,13 @@ module.exports = async ({ url, browserless }) => {
     abortTypes: ['image', 'media', 'stylesheet', 'font']
   })
 
+  debug('clicking input')
   await page.click('input')
+  debug('typing', url)
   await page.keyboard.type(url)
+  debug('clicking', '.btn-primary')
   await page.click('.btn-primary')
+  debug('waiting event...')
 
   await page.waitFor(
     () =>
@@ -20,6 +25,7 @@ module.exports = async ({ url, browserless }) => {
       !!document.querySelector('.alert-dismissible')
   )
 
+  debug('extracting information')
   const payload = await page.evaluate(() => {
     const getRow = n => `tbody > tr:nth-child(${n})`
     const results = []
