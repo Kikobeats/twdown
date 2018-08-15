@@ -2,7 +2,7 @@
   "name": "twdown",
   "description": "Get MP4/MP3 video url from any Twitter video",
   "homepage": "https://documentup.com/Kikobeats/twdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",

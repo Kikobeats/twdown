@@ -1,3 +1,10 @@
+<a name="1.0.3"></a>
+## 1.0.3 (2018-08-15)
+
+* Simulate click using javascript ([c451daa](https://github.com/Kikobeats/twdown/commit/c451daa))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2018-08-15)
 
