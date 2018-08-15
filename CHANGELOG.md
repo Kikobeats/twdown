@@ -1,3 +1,12 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2018-08-15)
+
+* Don't run tests before release ([eacd63a](https://github.com/Kikobeats/twdown/commit/eacd63a))
+* Scope selectors ([3c99528](https://github.com/Kikobeats/twdown/commit/3c99528))
+* Simplify script ([b84dd8c](https://github.com/Kikobeats/twdown/commit/b84dd8c))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2018-08-15)
 
