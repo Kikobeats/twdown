@@ -11,7 +11,7 @@ module.exports = async ({ url, browserless }) => {
   })
 
   await page.type('form input', url)
-  await page.click('form button')
+  await page.evaluate(() => document.querySelector('form button').click())
   await page.waitForNavigation()
 
   const payload = await page.evaluate(() => {
