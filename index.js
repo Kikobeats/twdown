@@ -56,5 +56,5 @@ module.exports = async ({ url, browserless }) => {
   })
 
   await page.close()
-  return payload
+  return payload.sort((a, b) => a.width > b.width)
 }
