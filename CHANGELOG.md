@@ -1,3 +1,10 @@
+<a name="1.0.4"></a>
+## 1.0.4 (2018-08-17)
+
+* Ensure sort results ([b8a7d8e](https://github.com/Kikobeats/twdown/commit/b8a7d8e))
+
+
+
 <a name="1.0.3"></a>
 ## 1.0.3 (2018-08-15)
 
